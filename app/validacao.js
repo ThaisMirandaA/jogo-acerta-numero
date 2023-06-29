@@ -2,7 +2,7 @@ function verficaSeOValorEValido(chute) {
     const numero = +chute;
     if (verificaSeENumero(numero)) {
         if (chute.toUpperCase() === 'GAMEOVER') {
-            document.body.classList.add('game-over-screen'); 
+            document.body.classList.add('game-over-screen');
             document.body.innerHTML = `<h1 class="game-over-titulo"> GAME OVER </h1>
         <button id="jogar-novamente" class="btn-jogar">Jogar novamente</button>`
         } else {
@@ -17,6 +17,7 @@ function verficaSeOValorEValido(chute) {
     }
 
     if (numero === numeroSecreto) {
+        document.body.classList.add('venceu-screen');
         document.body.innerHTML = `<h2> Você venceu!</h2> <h3>O número secreto era ${numeroSecreto}! </h3>
         <button id="jogar-novamente" class="btn-jogar">Jogar novamente</button>`;
 

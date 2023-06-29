@@ -5,7 +5,8 @@
     --bg-color: #A76F6F;
     --bg-color2: #435B66;
     --primary-color: #2D4356;
-    --secudanry-color: #EAB2A0; 
+    --secudanry-color: #EAB2A0;
+    --tertiary-color: #F4D3D3;
 }
 
 body {
@@ -47,21 +48,25 @@ h3 {
     margin: 20px;
 }
 
-.btn-jogar {
-    padding: 8px 15px;
-    font-size: 1em;
-    border-radius: 5px;
-    border: var(--primary-color) solid 2px;
-    background-color: var(--secudanry-color);
-    color: var(--primary-color);
-    margin-top: 20px;
-    cursor: pointer;
-}
-
 .game-over-screen {
     background-color: var(--bg-color2);
 }
 
 .game-over-titulo {
     color: white;
+}
+
+.venceu-screen {
+    background-color: #EAB2A0;
+}
+
+.btn-jogar {
+    padding: 8px 15px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: var(--primary-color) solid 2px;
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+    margin-top: 20px;
+    cursor: pointer;
 }
